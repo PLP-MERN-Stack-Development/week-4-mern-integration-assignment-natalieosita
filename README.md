@@ -1,11 +1,3 @@
-
----
-
-## 🧾 README.md Template
-
-Here’s a solid scaffold to drop into your final submission:
-
-```markdown
 # 📰 MERN Blog Application
 
 A full-stack blog platform built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring post creation, editing, category management, user authentication, image uploads, comments, and more.
