@@ -1,20 +1,30 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19842688&assignment_repo_type=AssignmentRepo)
-# MERN Stack Integration Assignment
 
-This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
+---
 
-## Assignment Overview
+## 🧾 README.md Template
 
-You will build a blog application with the following features:
-1. RESTful API with Express.js and MongoDB
-2. React front-end with component architecture
-3. Full CRUD functionality for blog posts
-4. User authentication and authorization
-5. Advanced features like image uploads and comments
+Here’s a solid scaffold to drop into your final submission:
+
+```markdown
+# 📰 MERN Blog Application
+
+A full-stack blog platform built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring post creation, editing, category management, user authentication, image uploads, comments, and more.
+
+---
+
+## 🚀 Features
+
+- 🔐 User registration & login
+- 📝 Create, edit, and delete blog posts
+- 📂 Organize posts by categories
+- 💬 Add comments to posts
+- 🖼️ Upload featured images
+- 🔍 Search and filter posts
+- 📄 Pagination support
+
+---
 
 ## Project Structure
-
-```
 mern-blog/
 ├── client/                 # React front-end
 │   ├── public/             # Static files
@@ -36,44 +46,89 @@ mern-blog/
 │   ├── server.js           # Main server file
 │   └── package.json        # Server dependencies
 └── README.md               # Project documentation
+
+---
+
+## 🛠️ Tech Stack
+
+- MongoDB + Mongoose
+- Express.js + Node.js
+- React + Vite
+- Tailwind CSS (optional)
+- JWT-based Authentication
+
+---
+
+## 🧰 Setup Instructions
+
+1. **Clone the repo**
+
+```bash
+git clone <your-repo-url>
+cd mern-blog
 ```
 
-## Getting Started
+2. **Set up backend**
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+```bash
+cd server
+cp .env.example .env
+npm install
+npm run dev
+```
 
-## Files Included
+3. **Set up frontend**
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+```bash
+cd client
+cp .env.example .env
+npm install
+npm run dev
+```
 
-## Requirements
+4. **Environment Variables**
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+Both `client/.env.example` and `server/.env.example` include required settings. Provide values for:
 
-## Submission
+- `MONGODB_URI`
+- `JWT_SECRET`
+- `VITE_API_URL` (frontend)
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+## 🔗 API Endpoints
 
-## Resources
+| Method | Route                | Description              |
+|--------|----------------------|--------------------------|
+| GET    | /api/posts           | Get all posts            |
+| POST   | /api/posts           | Create new post          |
+| GET    | /api/posts/:id       | Get single post          |
+| PUT    | /api/posts/:id       | Update a post            |
+| DELETE | /api/posts/:id       | Delete a post            |
+| GET    | /api/categories      | Get categories           |
+| POST   | /api/categories      | Create new category      |
+| POST   | /api/posts/:id/comments | Add comment         |
+| POST   | /api/auth/register   | User signup              |
+| POST   | /api/auth/login      | User login               |
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+---
+
+## 📸 Screenshots
+
+![Post view](screenshots/post.png)
+![Edit form](screenshots/edit.png)
+
+---
+
+## ✅ Status
+
+✅ All core features completed  
+🎯 Bonus features (auth, pagination, search, image upload) implemented  
+
+---
+
+```
+
+—
+
+
