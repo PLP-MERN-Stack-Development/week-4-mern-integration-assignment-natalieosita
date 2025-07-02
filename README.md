@@ -119,8 +119,3 @@ Both `client/.env.example` and `server/.env.example` include required settings. 
 
 ---
 
-```
-
-—
-
-
